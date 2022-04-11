@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOLIT.Productos.API", "XOLIT.Productos.API\XOLIT.Productos.API.csproj", "{2C4F87E5-B301-4B63-BB3A-1A665E17658E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOLIT.Productos.Infrastructure", "XOLIT.Productos.Infrastructure\XOLIT.Productos.Infrastructure.csproj", "{F4BBDA38-85FA-4367-8902-46C8C23E2ADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOLIT.Productos.Domain", "XOLIT.Productos.Domain\XOLIT.Productos.Domain.csproj", "{BAD61A12-0643-42DF-B038-00B79DE1EAC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOLIT.Productos.Application", "XOLIT.Productos.Application\XOLIT.Productos.Application.csproj", "{A62DF86F-A9D9-4715-BF7D-28F5D415BC9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C4F87E5-B301-4B63-BB3A-1A665E17658E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4F87E5-B301-4B63-BB3A-1A665E17658E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4F87E5-B301-4B63-BB3A-1A665E17658E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4F87E5-B301-4B63-BB3A-1A665E17658E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4BBDA38-85FA-4367-8902-46C8C23E2ADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4BBDA38-85FA-4367-8902-46C8C23E2ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4BBDA38-85FA-4367-8902-46C8C23E2ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4BBDA38-85FA-4367-8902-46C8C23E2ADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD61A12-0643-42DF-B038-00B79DE1EAC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD61A12-0643-42DF-B038-00B79DE1EAC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD61A12-0643-42DF-B038-00B79DE1EAC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD61A12-0643-42DF-B038-00B79DE1EAC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A62DF86F-A9D9-4715-BF7D-28F5D415BC9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62DF86F-A9D9-4715-BF7D-28F5D415BC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62DF86F-A9D9-4715-BF7D-28F5D415BC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62DF86F-A9D9-4715-BF7D-28F5D415BC9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE31EF23-6C18-48DA-B103-11C274F207C5}
+	EndGlobalSection
+EndGlobal
