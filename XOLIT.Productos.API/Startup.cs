@@ -63,9 +63,6 @@ namespace XOLIT.Productos.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            app.UseMiddleware<RequestResponseMiddleware>();
-
-            app.ConfigureExceptionHandler(logger);
             app.UseAuthentication();
 
             app.UseAuthentication();
