@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore;
 
-namespace XOLIT.Productos.API
+namespace XOLIT.ShoppingCart.API
 {
     public class Program
     {

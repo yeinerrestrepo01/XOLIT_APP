@@ -1,4 +1,4 @@
-﻿namespace XOLIT.Productos.Application
+﻿namespace XOLIT.ShoppingCart.Application
 {
     public class Class1
     {

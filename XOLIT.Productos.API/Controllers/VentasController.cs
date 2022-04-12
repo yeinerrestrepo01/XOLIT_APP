@@ -2,7 +2,7 @@
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace XOLIT.Productos.API.Controllers
+namespace XOLIT.ShoppingCart.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

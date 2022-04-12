@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XOLIT.Productos.Domain.Entities
+namespace XOLIT.ShoppingCart.Domain.Entities
 {
     /// <summary>
     /// Entidad EncabezadoFactura

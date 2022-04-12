@@ -5,9 +5,9 @@ using System.Data;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using XOLIT.Productos.Infrastructure.DBContext;
+using XOLIT.ShoppingCart.Infrastructure.DBContext;
 
-namespace XOLIT.Productos.Infrastructure.Repository
+namespace XOLIT.ShoppingCart.Infrastructure.Repository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {

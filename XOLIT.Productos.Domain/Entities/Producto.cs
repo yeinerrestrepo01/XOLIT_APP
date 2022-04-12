@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace XOLIT.Productos.Domain.Entities
+namespace XOLIT.ShoppingCart.Domain.Entities
 {
     /// <summary>
     /// Entidad Producto

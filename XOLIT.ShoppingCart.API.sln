@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XOLIT.Productos.Infrastructure", "XOLIT.Productos.Infrastructure\XOLIT.Productos.Infrastructure.csproj", "{F4BBDA38-85FA-4367-8902-46C8C23E2ADF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XOLIT.ShoppingCart.Infrastructure", "XOLIT.Productos.Infrastructure\XOLIT.ShoppingCart.Infrastructure.csproj", "{F4BBDA38-85FA-4367-8902-46C8C23E2ADF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XOLIT.Productos.Domain", "XOLIT.Productos.Domain\XOLIT.Productos.Domain.csproj", "{BAD61A12-0643-42DF-B038-00B79DE1EAC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XOLIT.ShoppingCart.Domain", "XOLIT.Productos.Domain\XOLIT.ShoppingCart.Domain.csproj", "{BAD61A12-0643-42DF-B038-00B79DE1EAC4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XOLIT.Productos.Application", "XOLIT.Productos.Application\XOLIT.Productos.Application.csproj", "{A62DF86F-A9D9-4715-BF7D-28F5D415BC9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XOLIT.ShoppingCart.Application", "XOLIT.Productos.Application\XOLIT.ShoppingCart.Application.csproj", "{A62DF86F-A9D9-4715-BF7D-28F5D415BC9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOLIT.Productos.API", "XOLIT.Productos.API\XOLIT.Productos.API.csproj", "{1060FE63-1083-45F2-B041-CE3B995529A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOLIT.ShoppingCart.API", "XOLIT.Productos.API\XOLIT.ShoppingCart.API.csproj", "{1060FE63-1083-45F2-B041-CE3B995529A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

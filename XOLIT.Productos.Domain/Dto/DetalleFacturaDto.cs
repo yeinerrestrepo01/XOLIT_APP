@@ -1,4 +1,4 @@
-﻿namespace XOLIT.Productos.Domain.Dto
+﻿namespace XOLIT.ShoppingCart.Domain.Dto
 {
     /// <summary>
     /// Detalle Factura Dto

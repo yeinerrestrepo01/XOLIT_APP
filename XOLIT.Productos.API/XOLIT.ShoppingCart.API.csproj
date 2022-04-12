@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\XOLIT.Productos.Infrastructure\XOLIT.Productos.Infrastructure.csproj" />
+    <ProjectReference Include="..\XOLIT.Productos.Infrastructure\XOLIT.ShoppingCart.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

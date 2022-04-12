@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace XOLIT.Productos.Domain.Dto
+namespace XOLIT.ShoppingCart.Domain.Dto
 {
     /// <summary>
     /// Response DTO

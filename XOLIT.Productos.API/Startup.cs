@@ -1,9 +1,10 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using XOLIT.Productos.Infrastructure.DBContext;
+using XOLIT.ShoppingCart.API.Middleware;
+using XOLIT.ShoppingCart.Infrastructure.DBContext;
 
-namespace XOLIT.Productos.API
+namespace XOLIT.ShoppingCart.API
 {
     public class Startup
     {
@@ -37,7 +38,7 @@ namespace XOLIT.Productos.API
                 swagger.SwaggerDoc("v1",
                 new OpenApiInfo
                 {
-                    Title = "XOLIT.Productos.API",
+                    Title = "XOLIT.ShoppingCart.API",
                     Version = "v1",
                     Description = "XOLIT Productos API  - Documentation Services",
                     Contact = contact
@@ -45,6 +46,10 @@ namespace XOLIT.Productos.API
                 });
             });
             services.AddControllers();
+            #endregion
+
+            #region Register (dependency injection)
+            IoC.AddDependency(services);
             #endregion
         }
 
