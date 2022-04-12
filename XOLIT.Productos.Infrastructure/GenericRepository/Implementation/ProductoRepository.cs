@@ -1,13 +1,9 @@
 ﻿using CaseLink.Core.Infrastructure.UnitOfWork;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using XOLIT.ShoppingCart.Domain.Entities;
 using XOLIT.ShoppingCart.Infrastructure.DBContext;
+using XOLIT.ShoppingCart.Infrastructure.GenericRepository;
 
-namespace XOLIT.ShoppingCart.Infrastructure.GenericRepository
+namespace XOLIT.ShoppingCart.Infrastructure.GenericRepository.Implementation
 {
     /// <summary>
     /// Repostorio generico para prodctos

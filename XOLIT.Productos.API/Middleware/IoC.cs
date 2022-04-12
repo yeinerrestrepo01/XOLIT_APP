@@ -1,7 +1,9 @@
 ﻿
 using CaseLink.Core.Infrastructure.UnitOfWork;
 using Microsoft.Extensions.DependencyInjection;
+using XOLIT.ShoppingCart.Application;
 using XOLIT.ShoppingCart.Infrastructure.GenericRepository;
+using XOLIT.ShoppingCart.Infrastructure.GenericRepository.Implementation;
 using XOLIT.ShoppingCart.Infrastructure.Repository;
 
 namespace XOLIT.ShoppingCart.API.Middleware
@@ -29,7 +31,7 @@ namespace XOLIT.ShoppingCart.API.Middleware
 
             #region Services
 
-            //services.AddTransient<IMedicalSpecialityService, MedicalSpecialityService>();
+            services.AddTransient<IProductoService, ProductoService>();
             #endregion
 
 

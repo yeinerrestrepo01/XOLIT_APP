@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
+using XOLIT.ShoppingCart.Commond;
 using XOLIT.ShoppingCart.Domain.Dto;
 
 namespace XOLIT.ShoppingCart.API.Middleware
@@ -23,7 +24,7 @@ namespace XOLIT.ShoppingCart.API.Middleware
                         await context.Response.WriteAsync(new DetalleErrorDto()
                         {
                             StatusCode = context.Response.StatusCode,
-                            Message = "Ha ocurrido un error interno de la aplicacion, espere un momento e inetente de nuevo mas tarde."
+                            Message = Mensajes.ErrorExcepcion
                         }.ToString());
                     }
                 });

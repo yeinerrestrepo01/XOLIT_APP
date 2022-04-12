@@ -23,7 +23,7 @@ namespace XOLIT.ShoppingCart.API
 
         {
 
-            string connection = Configuration.GetConnectionString("PanelBIDbContext");
+            string connection = Configuration.GetConnectionString("XolitVentasDbContext");
             services.AddDbContext<XolitDbContext>(options => options.UseSqlServer(connection).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
             #region Swagger
             // Register the Swagger generator, defining one or more Swagger documents
@@ -50,6 +50,7 @@ namespace XOLIT.ShoppingCart.API
 
             #region Register (dependency injection)
             IoC.AddDependency(services);
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             #endregion
         }
 

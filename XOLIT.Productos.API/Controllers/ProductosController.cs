@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Net;
+using XOLIT.ShoppingCart.Application;
+using XOLIT.ShoppingCart.Domain.Dto;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,11 +11,22 @@ namespace XOLIT.ShoppingCart.API.Controllers
     [ApiController]
     public class ProductosController : ControllerBase
     {
+        public IProductoService ProductoService;
+        public ProductosController(IProductoService productoService)
+        {
+            ProductoService = productoService;
+        }
         // GET: api/<ProductosController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        [ProducesResponseType(typeof(ResponseDto<List<ProductoDto>>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ResponseDto<List<ProductoDto>>), (int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType(typeof(ResponseDto<List<ProductoDto>>), (int)HttpStatusCode.NotFound)]
+        [ProducesResponseType(typeof(ResponseDto<List<ProductoDto>>), (int)HttpStatusCode.NoContent)]
+        [ProducesResponseType(typeof(ResponseDto<List<ProductoDto>>), (int)HttpStatusCode.InternalServerError)]
+        public IActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            var ResultadoTransaccion = ProductoService.ObtenerListadoProductos();
+            return StatusCode((int)ResultadoTransaccion.HttpStatusCode, ResultadoTransaccion.Data);
         }
 
         // GET api/<ProductosController>/5
