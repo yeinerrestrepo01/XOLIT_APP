@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using System.Net;
 using XOLIT.ShoppingCart.Domain.Dto;
 using XOLIT.ShoppingCart.Infrastructure.GenericRepository;
 
@@ -35,8 +36,19 @@ namespace XOLIT.ShoppingCart.Application
             var RespuestaTransaccion = new ResponseDto<List<ProductoDto>>();
             
             var ResultadoCOnsultaProducto = RepositoryProductos.ObtenerListadoProductos();
-            var ResultadoMap = Mapper.Map<List<ProductoDto>>(ResultadoCOnsultaProducto);
-            RespuestaTransaccion.Data = ResultadoMap;
+            if (ResultadoCOnsultaProducto.Any())
+            {
+                var ResultadoMap = Mapper.Map<List<ProductoDto>>(ResultadoCOnsultaProducto);
+                RespuestaTransaccion.Data = ResultadoMap;
+                RespuestaTransaccion.IsSuccess = true;
+                RespuestaTransaccion.HttpStatusCode = HttpStatusCode.OK;
+            }
+            else
+            {
+                RespuestaTransaccion.IsSuccess = true;
+                RespuestaTransaccion.HttpStatusCode = HttpStatusCode.NoContent;
+            }
+            
             return RespuestaTransaccion;
         }
     }
