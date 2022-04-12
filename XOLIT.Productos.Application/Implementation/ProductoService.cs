@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using System.Net;
+﻿using System.Net;
 using XOLIT.ShoppingCart.Commond.AutoMapper;
 using XOLIT.ShoppingCart.Domain.Dto;
 using XOLIT.ShoppingCart.Domain.Entities;
