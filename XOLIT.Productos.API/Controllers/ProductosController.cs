@@ -26,7 +26,7 @@ namespace XOLIT.ShoppingCart.API.Controllers
         public IActionResult Get()
         {
             var ResultadoTransaccion = ProductoService.ObtenerListadoProductos();
-            return StatusCode((int)ResultadoTransaccion.HttpStatusCode, ResultadoTransaccion.Data);
+            return StatusCode((int)ResultadoTransaccion.HttpStatusCode, ResultadoTransaccion);
         }
 
         // GET api/<ProductosController>/5

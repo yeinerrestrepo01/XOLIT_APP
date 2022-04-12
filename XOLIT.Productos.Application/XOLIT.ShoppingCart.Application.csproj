@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\XOLIT.Productos.Domain\XOLIT.ShoppingCart.Domain.csproj" />
     <ProjectReference Include="..\XOLIT.Productos.Infrastructure\XOLIT.ShoppingCart.Infrastructure.csproj" />
+    <ProjectReference Include="..\XOLIT.ShoppingCart.Commond\XOLIT.ShoppingCart.Commond.csproj" />
   </ItemGroup>
 
 </Project>

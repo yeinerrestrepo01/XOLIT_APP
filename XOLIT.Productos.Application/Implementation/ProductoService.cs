@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using System.Net;
+using XOLIT.ShoppingCart.Commond.AutoMapper;
 using XOLIT.ShoppingCart.Domain.Dto;
+using XOLIT.ShoppingCart.Domain.Entities;
 using XOLIT.ShoppingCart.Infrastructure.GenericRepository;
 
 namespace XOLIT.ShoppingCart.Application
@@ -15,16 +17,20 @@ namespace XOLIT.ShoppingCart.Application
         /// </summary>
         private readonly IProductoRepository RepositoryProductos;
 
-        private readonly IMapper Mapper;
+        /// <summary>
+        /// Objeto de MapperXOLIT
+        /// </summary>
+        private readonly MapperXOLIT<Producto, ProductoDto> MapperProductos;
 
         /// <summary>
         /// Inicializador de clase servicios <class>ProductoService</class>
         /// </summary>
         /// <param name="productoRepository">productoRepository</param>
-        public ProductoService(IProductoRepository productoRepository, IMapper mapper)
+        public ProductoService(IProductoRepository productoRepository)
         {
             RepositoryProductos = productoRepository;
-            Mapper = mapper;
+            MapperProductos = new MapperXOLIT<Producto, ProductoDto>();
+
         }
 
         /// <summary>
@@ -38,14 +44,16 @@ namespace XOLIT.ShoppingCart.Application
             var ResultadoCOnsultaProducto = RepositoryProductos.ObtenerListadoProductos();
             if (ResultadoCOnsultaProducto.Any())
             {
-                var ResultadoMap = Mapper.Map<List<ProductoDto>>(ResultadoCOnsultaProducto);
+                var ResultadoMap = MapperProductos.CreteMapper(ResultadoCOnsultaProducto);
                 RespuestaTransaccion.Data = ResultadoMap;
+                RespuestaTransaccion.Count = ResultadoMap.Count;
                 RespuestaTransaccion.IsSuccess = true;
                 RespuestaTransaccion.HttpStatusCode = HttpStatusCode.OK;
             }
             else
             {
                 RespuestaTransaccion.IsSuccess = true;
+                RespuestaTransaccion.Count = 0;
                 RespuestaTransaccion.HttpStatusCode = HttpStatusCode.NoContent;
             }
             
