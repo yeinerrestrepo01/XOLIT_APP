@@ -1,15 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace XOLIT.Productos.Domain.Entities
+﻿namespace XOLIT.Productos.Domain.Dto
 {
     /// <summary>
-    /// Entidad DetalleFactura
+    /// Detalle Factura Dto
     /// </summary>
-    [Table("DetalleFactura")]
-    public class DetalleFactura
+    public class DetalleFacturaDto
     {
-        [Key]
         public int Id { get; set; }
         public int IdFactura { get; set; }
         public int IdProducto { get; set; }
@@ -18,8 +13,5 @@ namespace XOLIT.Productos.Domain.Entities
         public decimal Iva { get; set; }
         public decimal ValorIva { get; set; }
         public decimal ValorCompra { get; set; }
-
-        public virtual Producto? ProductoNavegacion { get; set; }
-        public virtual EncabezadoFactura? EncabezadoFacturaNavegacion { get; set; }
     }
 }

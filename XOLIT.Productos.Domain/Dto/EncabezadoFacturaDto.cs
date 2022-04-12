@@ -1,20 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XOLIT.Productos.Domain.Entities
+namespace XOLIT.Productos.Domain.Dto
 {
     /// <summary>
-    /// Entidad EncabezadoFactura
+    /// EncabezadoFacturaDto Dto
     /// </summary>
-    [Table("EncabezadoFactura")]
-    public class EncabezadoFactura
+    public class EncabezadoFacturaDto
     {
-        [Key]
         public int IdFactura { get; set; }
         public string? IdentificacionCliente { get; set; }
         public string? NombreCliente { get; set; }
